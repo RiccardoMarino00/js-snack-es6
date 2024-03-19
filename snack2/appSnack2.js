@@ -68,7 +68,15 @@ for (let i = 0; i < students.length; i++){
     studentPlate.push(studentUpperName)
 }
 console.log(studentPlate)
-// function capitalizeUpperCase (string){
-//     const newString = string.toUpperCase()
-//     return newString
-// }
+
+const studentGradesMore70 = []
+// Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70
+for (let i = 0; i < students.length; i++){
+    const currentStudent = students[i];
+    const studentGrades = currentStudent.grades
+    if (studentGrades > 70){
+        studentGradesMore70.push(currentStudent)
+    }
+
+}
+console.log(studentGradesMore70)
