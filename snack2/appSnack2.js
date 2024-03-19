@@ -80,3 +80,16 @@ for (let i = 0; i < students.length; i++){
 
 }
 console.log(studentGradesMore70)
+
+
+const studentGradesAndId = []
+// Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70 e id superiore a 120
+for (let i = 0; i < students.length; i++){
+    const currentStudent = students[i];
+    const studentGrades = currentStudent.grades;
+    const studentId = currentStudent.id;
+    if (studentGrades > 70 && studentId > 120){
+        studentGradesAndId.push(currentStudent)
+    }
+}
+console.log(studentGradesAndId)
