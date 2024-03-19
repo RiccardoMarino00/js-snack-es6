@@ -10,6 +10,8 @@ function guestGenerator (nomeTavolo, nomeOspite, posto) {
     return guest
  }
 
+
+                                        // METODO CON CICLO FOR
 // const newTavoloVip = []
 
 //  for (let i = 0; i < tavoloVip.length; i++){
@@ -20,9 +22,15 @@ function guestGenerator (nomeTavolo, nomeOspite, posto) {
 
 //  console.log(newTavoloVip);
 
-const newTavoloVip = tavoloVip.map((el, i, array) => {
-    
-})
+
+                                         // METODO CON MAP
+
+let modifiedTavoloVip = tavoloVip.map(function(element, i){
+    element = guestGenerator("Tavolo VIP", tavoloVip[i], i + 1)
+    return element
+});
+
+console.log(modifiedTavoloVip); 
 
 
 
