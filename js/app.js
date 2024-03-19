@@ -10,15 +10,21 @@ function guestGenerator (nomeTavolo, nomeOspite, posto) {
     return guest
  }
 
-const newTavoloVip = []
+// const newTavoloVip = []
 
- for (let i = 0; i < tavoloVip.length; i++){
-    currentEl = tavoloVip[i];
-    const guest = guestGenerator("Tavolo VIP", tavoloVip[i], i + 1)
-    newTavoloVip.push(guest)
- }
+//  for (let i = 0; i < tavoloVip.length; i++){
+//     currentEl = tavoloVip[i];
+//     const guest = guestGenerator("Tavolo VIP", tavoloVip[i], i + 1)
+//     newTavoloVip.push(guest)
+//  }
 
- console.log(newTavoloVip);
+//  console.log(newTavoloVip);
+
+const newTavoloVip = tavoloVip.map((el, i, array) => {
+    
+})
+
+
 
 
 

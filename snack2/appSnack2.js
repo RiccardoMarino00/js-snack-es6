@@ -12,3 +12,63 @@
 // 196  Luigi Grimaldello 	  68
 // 102  Piero della Francesca   50
 // 120  Francesca da Polenta    84
+
+const students = [
+    {
+        id: 213,
+        name: "Marco della Rovere",
+        grades: 78
+    },
+
+    {
+        id: 110,
+        name: "Paola Cortellessa",
+        grades: 96
+    },
+
+    {
+        id: 250,
+        name: "Andrea Mantegna",
+        grades: 48,
+    },
+
+    {
+        id: 145,
+        name: "Gaia Borromini",
+        grades: 74
+    },
+
+    {
+        id: 196,
+        name: "Luigi Grimaldello",
+        grades: 68
+    },
+
+    {
+        id: 102,
+        name: "Piero della Francesca",
+        grades: 50
+    },
+
+    {
+        id: 120,
+        name: "Francesca da Polenta",
+        grades: 84
+    },
+];
+
+const studentPlate = []
+// Stampo nomi studenti in maiuscolo
+for (let i = 0; i < students.length; i++){
+    const currentStudent = students[i];
+    const studentName = currentStudent.name
+    const studentUpperName = studentName.toUpperCase()
+    // const formattedCurrentStudent = capitalizeUpperCase(currentStudent)
+    // console.log(studentUpperName)
+    studentPlate.push(studentUpperName)
+}
+console.log(studentPlate)
+// function capitalizeUpperCase (string){
+//     const newString = string.toUpperCase()
+//     return newString
+// }
