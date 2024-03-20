@@ -1,5 +1,5 @@
 const tavoloVip = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin'];
-
+console.log(tavoloVip)
 // Creo funzione per generare invitati
 function guestGenerator (nomeTavolo, nomeOspite, posto) {
     const guest = {
@@ -24,7 +24,7 @@ function guestGenerator (nomeTavolo, nomeOspite, posto) {
 
 
                                          // METODO CON MAP
-
+// let modifiedTavoloVip = []
 let modifiedTavoloVip = tavoloVip.map(function(element, i){
     element = guestGenerator("Tavolo VIP", tavoloVip[i], i + 1)
     return element
