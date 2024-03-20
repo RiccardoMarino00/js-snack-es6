@@ -45,14 +45,12 @@ for (let i = 0; i < footballTeam.length; i++){
 
 console.log(footballTeam)
 
-
 // Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
-const puntiFalliTeam = footballTeam.map((el, i, array) => {
+const puntiFalliTeam = footballTeam.map((footballTeam) => {
     const {punti, falli} = footballTeam
-    return punti, falli
+    return punti, falli    
 })
-
-
+console.log(puntiFalliTeam)
 
 
 
