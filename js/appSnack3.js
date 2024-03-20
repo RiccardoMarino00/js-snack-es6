@@ -58,8 +58,11 @@ const bike = [
   let nameOfLightWeight = bike[0].nome;
   for (let i = 1; i < bike.length; i++) {
     if (bike[i].peso < lightWeight) {
-      lightWeight = bike[i].peso;
-      nameOfLightWeight = bike[i].nome
+      lightWeight = bike[i];
+      nameOfLightWeight = bike[i]
     }
   }
-  console.log("La bici con il peso minore è " + nameOfLightWeight + "con un peso di " + lightWeight )
+
+  const {nome, peso} = lightWeight; // ?????
+  console.log(`La bici con il peso minore è  ${nome}  con un peso di ${peso}` )
+
